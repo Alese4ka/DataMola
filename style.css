@@ -180,7 +180,7 @@ h3 {
   margin: 1rem 0 1rem 2.3rem;
 }
 .right__block {
-  flex-basis: 50%;
+  flex-basis: 60%;
 }
 .experience__list {
   padding-left: 1.25rem;
@@ -308,6 +308,8 @@ footer {
     margin: 1rem auto;
   }
   main {
-    flex-direction: column;
+    padding-left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
