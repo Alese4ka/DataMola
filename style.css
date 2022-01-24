@@ -2,20 +2,17 @@
 :root {
   --bg-dark: #27272f;
   --bg-grey: #3e414a;
+  --circle-grey: #dddddd;
   --rgba-yellow: rgba(197, 165, 42, 0.8);
   --font-white: #ffffff;
-  --font-grey: #757880;
   --font-gold: rgb(197, 165, 42);
-  --font1: 48px;
-  --font2: 28px;
-  --font3: 18px;
-  --font4: 14px;
+  --font-size: 18px;
 }
 
 body {
   max-width: 69rem;
-  margin: 40px auto;
-  font-size: 18px;
+  margin: 2.5rem auto;
+  font-size: var(--font-size);
   font-family: "Hind Siliguri", sans-serif;
   background-color: var(--bg-grey);
 }
@@ -61,40 +58,40 @@ figure {
 .head__about {
   font-size: var(--font3);
   line-height: 1.5;
-  padding: 15px 25px;
+  padding: 0.9375rem 1.5625rem;
   color: var(--font-white);
   background-color: var(--font-gold);
 }
 main {
   padding-top: 2rem;
   padding-left: 3rem;
-  background-color: #ffffff;
+  background-color: var(--font-white);
   display: flex;
   flex-direction: row;
   align-content: flex-start;
 }
 .left__block {
   flex-basis: 50%;
-  margin-right: 100px;
+  margin-right: 6.25rem;
 }
 h3 {
   display: inline;
   background-color: var(--rgba-yellow);
-  width: 210px;
-  height: 20px;
-  border-radius: 0 50px 0px 50px;
+  width: 13.125rem;
+  height: 1.25rem;
+  border-radius: 0 3.125rem 0 3.125rem;
 }
 .contacts__list {
-  padding: 0px 0px 0px 40px;
-  margin-top: 20px;
-  margin-left: 20px;
+  padding: 0 0 0 2.5rem;
+  margin-top: 1.25rem;
+  margin-left: 1.25rem;
 }
 .contacts__list > li > a {
   text-decoration: none;
   color: var(--bg-dark);
 }
 .skills {
-  margin-top: 50px;
+  margin-top: 3.125rem;
 }
 .skills__level {
   margin-top: 1rem;
@@ -118,7 +115,7 @@ h3 {
   height: 5.5em;
   position: relative;
   border-radius: 50%;
-  line-height: 80px;
+  line-height: 5rem;
   text-align: center;
 }
 .skills__level-one:after,
@@ -130,7 +127,7 @@ h3 {
   border-radius: 50%;
   display: block;
   content: "HTML";
-  background: #fff;
+  background: var(--font-white);
   position: absolute;
   left: 0.5em;
   top: 0.5em;
@@ -160,7 +157,7 @@ h3 {
       transparent 50%,
       var(--font-gold) 50%
     ),
-    linear-gradient(90deg, #ddd 50%, var(--font-gold) 50%);
+    linear-gradient(90deg, var(--circle-grey) 50%, var(--font-gold) 50%);
 }
 .skills__level-three,
 .skills__level-four,
@@ -170,10 +167,10 @@ h3 {
       transparent 50%,
       var(--font-gold) 50%
     ),
-    linear-gradient(90deg, #ddd 50%, var(--font-gold) 50%);
+    linear-gradient(90deg, var(--circle-grey) 50%, var(--font-gold) 50%);
 }
 .education__list {
-  margin: 20px 0px 20px 40px;
+  margin: 1.25rem 0 1.25rem 2.5rem;
 }
 #languages {
   margin-top: 1.5rem;
@@ -185,9 +182,9 @@ h3 {
   flex-basis: 50%;
 }
 .experience__list {
-  padding-left: 20px;
-  padding-top: 20px;
-  margin-left: 20px;
+  padding-left: 1.25rem;
+  padding-top: 1.25rem;
+  margin-left: 1.25rem;
   display: flex;
   flex-direction: column;
 }
@@ -229,8 +226,8 @@ h3 {
   max-height: 20rem;
 }
 footer {
-  border-top: solid 2px#606060;
-  background-color: #ffffff;
+  border-top: solid 0.125rem var(--bg-grey);
+  background-color: var(--font-white);
 }
 .footer__github {
   margin: 1rem 1rem;
