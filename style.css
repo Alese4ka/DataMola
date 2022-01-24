@@ -16,9 +16,30 @@ body {
   font-family: "Hind Siliguri", sans-serif;
   background-color: var(--bg-grey);
 }
+header {
+  background-color: var(--font-white);
+  display: flex;
+  flex-direction: column;
+}
+.head__nav {
+  margin: 0;
+  padding-left: 0;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  background-color: var(--bg-grey);
+}
 .head__nav > li > a {
   text-decoration: none;
   color: var(--font-white);
+}
+.head__img-info {
+  border-top: solid 0.125rem var(--font-white);
+  background-color: var(--bg-grey);
+  display: flex;
+  align-items: flex-start;
 }
 h1 {
   margin-top: 0.2rem;
@@ -28,25 +49,6 @@ h2 {
   margin-top: 0;
   color: var(--font-white);
   background-color: var(--bg-grey);
-}
-header {
-  background-color: var(--font-white);
-  display: flex;
-  flex-direction: column;
-}
-.head__nav {
-  margin: 0;
-  padding-left: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  background-color: var(--bg-grey);
-}
-.head__img-info {
-  background-color: var(--bg-grey);
-  display: flex;
-  align-items: flex-start;
 }
 .cv-img {
   max-width: 40rem;
@@ -67,7 +69,6 @@ main {
   padding-left: 3rem;
   background-color: var(--font-white);
   display: flex;
-  flex-direction: row;
   align-content: flex-start;
 }
 .left__block {
@@ -96,7 +97,7 @@ h3 {
 .skills__level {
   margin-top: 1rem;
   margin-left: 1.8rem;
-  width: 25rem;
+  max-width: 25rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -241,4 +242,67 @@ footer {
 .footer__github-img {
   max-width: 3rem;
   max-height: 3rem;
+  margin-right: 0.5rem;
+}
+@media (max-width: 58.75rem) {
+  .head__nav > li > a {
+    margin-right: 0.5rem;
+  }
+  h1,
+  h2 {
+    margin-left: 1rem;
+    font-size: 1rem;
+  }
+  .left__block {
+    margin-top: 1rem;
+    margin-right: 0;
+    font-size: 0.9rem;
+  }
+  .skills__level,
+  .english__level {
+    margin-left: 0;
+  }
+  .right__block {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    font-size: 0.9rem;
+  }
+  .education__list,
+  .contacts__list,
+  #skills,
+  #languages {
+    padding-left: 0;
+    margin-left: 0;
+  }
+  .experience__list {
+    margin: 0;
+    padding-left: 0;
+  }
+  .experience__list-img {
+    max-width: 12rem;
+    max-height: 12rem;
+  }
+  .experience__list-project-hover-text,
+  .experience__list-link > div {
+    max-width: 12rem;
+  }
+}
+@media (max-width: 29.625rem) {
+  .head__nav > li > a {
+    margin-right: 0.5rem;
+    font-size: 0.5rem;
+  }
+  .head__img-info {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  figure {
+    margin: 1rem auto;
+  }
+  main {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
