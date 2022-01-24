@@ -180,7 +180,7 @@ h3 {
   margin: 1rem 0 1rem 2.3rem;
 }
 .right__block {
-  flex-basis: 50%;
+  flex-basis: 60%;
 }
 .experience__list {
   padding-left: 1.25rem;
@@ -283,6 +283,12 @@ footer {
     max-width: 12rem;
     max-height: 12rem;
   }
+  .experience__list-project .experience__list-project-hover-text {
+    height: 5.818rem;
+  }
+  .experience__list-project-hover-text a div {
+    padding-top: 0;
+  }
   .experience__list-project-hover-text,
   .experience__list-link > div {
     max-width: 12rem;
@@ -302,7 +308,8 @@ footer {
     margin: 1rem auto;
   }
   main {
-    flex-direction: column;
-    justify-content: flex-start;
+    padding-left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
