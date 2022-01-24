@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400&display=swap");
+:root {
+  --bg-dark: #27272f;
+  --bg-grey: #3e414a;
+  --rgba-yellow: rgba(197, 165, 42, 0.8);
+  --font-white: #ffffff;
+  --font-grey: #757880;
+  --font-gold: rgb(197, 165, 42);
+  --font1: 48px;
+  --font2: 28px;
+  --font3: 18px;
+  --font4: 14px;
+}
+
+body {
+  max-width: 69rem;
+  margin: 40px auto;
+  font-size: 18px;
+  font-family: "Hind Siliguri", sans-serif;
+  background-color: var(--bg-grey);
+}
+.head__nav > li > a {
+  text-decoration: none;
+  color: var(--font-white);
+}
+h1 {
+  margin-top: 0.2rem;
+  color: var(--font-white);
+}
+h2 {
+  margin-top: 0;
+  color: var(--font-white);
+  background-color: var(--bg-grey);
+}
+header {
+  background-color: var(--font-white);
+  display: flex;
+  flex-direction: column;
+}
+.head__nav {
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  background-color: var(--bg-grey);
+}
+.head__img-info {
+  background-color: var(--bg-grey);
+  display: flex;
+  align-items: flex-start;
+}
+.cv-img {
+  max-width: 40rem;
+  max-height: 25rem;
+}
+figure {
+  margin-inline-start: 0;
+}
+.head__about {
+  font-size: var(--font3);
+  line-height: 1.5;
+  padding: 15px 25px;
+  color: var(--font-white);
+  background-color: var(--font-gold);
+}
+main {
+  padding-top: 2rem;
+  padding-left: 3rem;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+}
+.left__block {
+  flex-basis: 50%;
+  margin-right: 100px;
+}
+h3 {
+  display: inline;
+  background-color: var(--rgba-yellow);
+  width: 210px;
+  height: 20px;
+  border-radius: 0 50px 0px 50px;
+}
+.contacts__list {
+  padding: 0px 0px 0px 40px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.contacts__list > li > a {
+  text-decoration: none;
+  color: var(--bg-dark);
+}
+.skills {
+  margin-top: 50px;
+}
+.skills__level {
+  margin-top: 1rem;
+  margin-left: 1.8rem;
+  width: 25rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.skills__level-one,
+.skills__level-two,
+.skills__level-three,
+.skills__level-four,
+.skills__level-five,
+.skills__level-six {
+  display: inline-block;
+  margin: 0.5em;
+  width: 5.5em;
+  height: 5.5em;
+  position: relative;
+  border-radius: 50%;
+  line-height: 80px;
+  text-align: center;
+}
+.skills__level-one:after,
+.skills__level-two:after,
+.skills__level-three:after,
+.skills__level-four:after,
+.skills__level-five:after,
+.skills__level-six:after {
+  border-radius: 50%;
+  display: block;
+  content: "HTML";
+  background: #fff;
+  position: absolute;
+  left: 0.5em;
+  top: 0.5em;
+  height: 4.5em;
+  width: 4.5em;
+}
+.skills__level-two:after {
+  content: "CSS";
+}
+.skills__level-three:after {
+  content: "JavaScript";
+}
+.skills__level-four:after {
+  content: "SASS";
+}
+.skills__level-five:after {
+  content: "GIT";
+}
+.skills__level-six:after {
+  content: "WEBPACK";
+}
+.skills__level-one,
+.skills__level-two,
+.skills__level-five {
+  background-image: linear-gradient(
+      200deg,
+      transparent 50%,
+      var(--font-gold) 50%
+    ),
+    linear-gradient(90deg, #ddd 50%, var(--font-gold) 50%);
+}
+.skills__level-three,
+.skills__level-four,
+.skills__level-six {
+  background-image: linear-gradient(
+      150deg,
+      transparent 50%,
+      var(--font-gold) 50%
+    ),
+    linear-gradient(90deg, #ddd 50%, var(--font-gold) 50%);
+}
+.education__list {
+  margin: 20px 0px 20px 40px;
+}
+#languages {
+  margin-top: 1.5rem;
+}
+.english__level {
+  margin: 1rem 0 1rem 2.3rem;
+}
+.right__block {
+  flex-basis: 50%;
+}
+.experience__list {
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.experience__list-project {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+.experience__list-project .experience__list-project-hover-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 20rem;
+  height: 9.718rem;
+  background: var(--rgba-yellow);
+  opacity: 0;
+  transition: opacity;
+}
+.experience__list-project-hover-text a {
+  text-decoration: none;
+  font-style: italic;
+}
+.experience__list-project-hover-text a div {
+  display: table-cell;
+  padding-top: 3rem;
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+}
+.experience__list-project:hover .experience__list-project-hover-text {
+  opacity: 1;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.experience__list-img {
+  max-width: 20rem;
+  max-height: 20rem;
+}
+footer {
+  border-top: solid 2px#606060;
+  background-color: #ffffff;
+}
+.footer__github {
+  margin: 1rem 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: var(--bg-dark);
+}
+.footer__github-img {
+  max-width: 3rem;
+  max-height: 3rem;
+}
